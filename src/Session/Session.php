@@ -93,6 +93,19 @@ class Session implements SessionInterface
 
 
     /**
+     * var_dump the session.
+     *
+     * @return array
+     *
+     * @SuppressWarnings(PHPMD.Superglobals)
+     */
+    public function dumpSession() {
+        return var_dump($_SESSION);
+    }
+
+
+
+    /**
      * Set values in session.
      *
      * @param string $key   in session variable.
